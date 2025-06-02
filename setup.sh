@@ -22,6 +22,8 @@ chsh -s $(which zsh)
 # Firewall & Anonymity Tools
 # ------------------
 sudo apt install -y ufw
+sudo apt install iptables nftables
+sudo ufw disable
 sudo ufw enable
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
